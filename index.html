@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Mignon Rossouw Portfolio </title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+  
+  <!-- External Stylesheets-->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="desktop">
+        <!-- Desktop Icons -->
+         <div class = "icon-container">
+            <!-- Icon 1 (Browser) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon1" onclick="openWindow('window1')">
+                    <img src="assets/images/browser.png" alt="App 1">
+                    <p> Browser</p>
+                </div>
+            </div>
+            <!-- Icon 2 (Folder) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon2" onclick="openWindow('window2')">
+                    <img src="assets/images/folder.png" alt="App 2">
+                    <p> Folder </p>
+                </div>
+            </div>
+            <!-- Icon 3 (Games) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon3" onclick="openWindow('window3')">
+                    <img src="assets/images/joystick.png" alt="App 3">
+                    <p> Games </p>
+                </div>
+            </div>
+            <!-- Icon 4 (BAT File) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon4" onclick="openWindow('window4')">
+                    <img src="assets/images/batch.png" alt="App 4">
+                    <p> BAT File </p>
+                </div>
+            </div>
+            <!-- Icon 5 (Notes) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon5" onclick="openWindow('window5')">
+                    <img src="assets/images/notepad.png" alt="App 5">
+                    <p> Notes </p>
+                </div>
+            </div>
+            <!-- Icon 6 (Information) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon6" onclick="openWindow('window6')">
+                    <img src="assets/images/scroll.png" alt="App 6">
+                    <p> Information </p>
+                </div>
+            </div>
+            <!-- Icon 7 (Mignon CV) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon7">
+                    <a href="https://drive.google.com/file/d/1xWKLILyBq_x2PR4u5U7g3YFOnda0B_qH/view?usp=sharing" download class="cv-download" target="_blank">
+                    <img src="assets/images/curriculum-vitae.png" alt="App 7">
+                    <p> Mignon CV</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Icon 8 (precious.png) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon8" onclick="openWindow('window8')">
+                    <img src="assets/images/jpg.png" alt="App 8">
+                    <p> precious.png </p>
+                </div>
+            </div>
+            <!-- Icon 9 (Recycle Bin) -->
+            <div class = "icon-content">
+                <div class="icon" id="icon9" onclick="openWindow('window9')">
+                    <img src="assets/images/garbage.png" alt="App 9">
+                    <p> Recycle Bin </p>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Taskbar -->
+        <div class="taskbar">
+          <div class="start-menu">
+            <button onclick="toggleStartMenu()" id = "taskbar-button"></button>
+            <div class="start-menu-content" id="start-menu">
+              <ul>
+                <li onclick="goToSettings()"> Settings </li>
+                <li onclick="enterSleepMode()"> Sleep </li>
+                <li onclick="restart()"> Restart </li>
+                <li onclick="shutDown()"> Shut Down </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clock">
+            <span id="txt"></span>
+        </div>
+        </div>
+
+        <!-- Splash Screen -->
+        
+      
+        <!-- Window 1 (Browser) -->
+        <div class="window" id="window1" style="display:none;">
+          <div class="window-header">
+            <span class="window-title">Browser</span>
+            <button class="close-btn" onclick="closeWindow('window1')">&times;</button>
+          </div>
+          <div class="window-content">
+            <p> Coming Soon </p>
+            <pre>
+                /\_/\ 
+              =(• . •)=
+               /     \
+                    
+          </pre>
+          </div>
+        </div>
+      
+        <!-- Window 2 (Folder) -->
+        <div class="window" id="window2" style="display:none;">
+            <div class="window-header">
+              <span class="window-title">Folder</span>
+              <button class="close-btn" onclick="closeWindow('window2')">&times;</button>
+            </div>
+            <div class="window-content">
+              <p> Coming Soon </p>
+              <pre>
+                  /\_/\ 
+                =(• . •)=
+                 /     \
+                      
+            </pre>
+            </div>
+        </div>
+
+        <!-- Window 3 (Games) -->
+        <div class="window" id="window3" style="display:none;">
+            <div class="window-header">
+              <span class="window-title"> Games </span>
+              <button class="close-btn" onclick="closeWindow('window3')">&times;</button>
+            </div>
+            <div class="window-content">
+              <p>Coming Soon</p>
+              <pre>
+                /\_/\ 
+              =(• . •)=
+               /     \
+                    
+          </pre>
+            </div>
+        </div>
+
+        <!-- Window 4 (BAT File) -->
+        <div class="window" id="window4" style="display:none;">
+            <div class="window-header">
+              <span class="window-title"> Command Prompt </span>
+              <button class="close-btn" onclick="closeWindow('window4')">&times;</button>
+            </div>
+            <div id="terminal" class="terminal">
+              <!-- Terminal Content -->
+                <div id = "output" class="output"> </div>
+                    <input type = "text" id = "input" class = "input" placeholder="  . . ." autocomplete="off">
+            </div>
+        </div>
+
+        <!-- Window 5 (Notes) -->
+        <div class="window" id="window5" style="display:none;">
+            <div class="window-header">
+              <span class="window-title"> Notes </span>
+              <button class="close-btn" onclick="closeWindow('window5')">&times;</button>
+            </div>
+            <div class="window-content">
+              <p>Coming Soon</p>
+              <pre>
+                /\_/\ 
+              =(• . •)=
+               /     \
+                    
+          </pre>
+            </div>
+        </div>
+
+        <!-- Window 6 (Information) -->
+        <div class="window" id="window6" style="display:none;">
+            <div class="window-header">
+              <span class="window-title"> Information </span>
+              <button class="close-btn" onclick="closeWindow('window6')">&times;</button>
+            </div>
+            <div class="window-content">
+              <p> Coming Soon</p>
+              <pre>
+                /\_/\ 
+              =(• . •)=
+               /     \
+                    
+          </pre>
+            </div>
+        </div>
+
+        <!-- Window 7 (Mignon CV) -->
+        <div class="window" id="window7" style="display:none;">
+            <div class="window-header">
+              <span class="window-title">Mignon Rossouw Curriculum Vitae</span>
+              <button class="close-btn" onclick="closeWindow('window7')">&times;</button>
+            </div>
+            <div class="window-content"></div>
+        </div>
+
+        <!-- Window 8 (precious.png) -->
+        <div class="window" id="window8" style="display:none;">
+            <div class="window-header">
+              <span class="window-title"> precious.png </span>
+              <button class="close-btn" onclick="closeWindow('window8')">&times;</button>
+            </div>
+            <div class="window-content">
+                <!-- Picture Content -->
+                <div class="picture-body">
+                    <img src="assets/images/precious.png" alt="precious.png">
+                    <!-- Resize handle in the bottom-right corner -->
+                    <div class="resize-handle"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Window 9 (Recycle Bin) -->
+        <div class="window" id="window9" style="display:none;">
+            <div class="window-header">
+              <span class="window-title"> Recycle Bin </span>
+              <button class="close-btn" onclick="closeWindow('window9')">&times;</button>
+            </div>
+            <div class="window-content">
+              <p>Coming Soon</p>
+              <pre>
+                /\_/\ 
+              =(• . •)=
+               /     \
+                    
+          </pre>
+            </div>
+        </div>
+    </div>
+
+  <script src="javascript/scripts.js"></script>
+</body>
+</html>
