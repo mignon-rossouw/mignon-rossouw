@@ -1,0 +1,62 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonPop = document.querySelector('.button-container.pop');
+    const buttonX = document.querySelector('.button-x');
+    const buttonModal = document.querySelector('.button-modal');
+    const buttonOverlay = document.querySelector('.button-overlay');
+    const taskbar = document.querySelector('.taskbar');
+
+    const openButton = function() {
+        buttonModal.classList.remove('hidden');
+        buttonOverlay.classList.remove('hidden');
+        adjustModalSize();
+    }
+
+    buttonPop.addEventListener('click', openButton);
+
+    const closeButton = function() {
+        buttonModal.classList.add('hidden');
+        buttonOverlay.classList.add('hidden');
+    }
+
+    buttonX.addEventListener('click', closeButton);
+    buttonOverlay.addEventListener('click', closeButton);
+
+    // Function to adjust the modal size based on the viewport dimensions
+    const adjustModalSize = function() {
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const taskbarHeight = taskbar.offsetHeight;
+
+        if (viewportWidth < 600) {
+            buttonModal.style.width = '50%';
+    
+        } else if (viewportWidth < 768) {
+            buttonModal.style.width = '40%';
+           
+        } else if (viewportWidth < 992) {
+            buttonModal.style.width = '30%';
+            
+        } else if (viewportWidth < 1200) {
+            buttonModal.style.width = '20%';
+            
+        } else {
+            buttonModal.style.width = '10%';
+            
+        }
+
+        // Position the modal above the taskbar
+        buttonModal.style.bottom = `${taskbarHeight + 5}px`;
+
+        // Ensure the modal height does not exceed the viewport height
+        if (buttonModal.offsetHeight > viewportHeight) {
+            buttonModal.style.height = `${viewportHeight - 20}px`;
+            buttonModal.style.overflowY = 'scroll';
+        } else {
+            buttonModal.style.height = 'auto';
+            buttonModal.style.overflowY = 'auto';
+        }
+    }
+
+    // Adjust modal size on window resize
+    window.addEventListener('resize', adjustModalSize);
+});

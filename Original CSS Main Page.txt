@@ -1,0 +1,128 @@
+<style>
+/* ############################################### */
+/* +++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* General Styling */
+
+/* Overall */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sniglet", serif;
+}
+
+/* HTML and Body */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Container (Icons and Taskbar) */
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    background-image: url("main-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Taskbar at the bottom */
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #84D9FF;
+ 
+}
+
+.taskbar-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-container {
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.start-button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #0087C5;
+    border-radius: 50%;
+    border: 3px solid #004C6F;
+    display: flex;
+    font-size: 16px;
+    
+}
+
+.start-button:hover {
+    background-color: #eeb3ac;
+    transform: scale(1.1);
+}
+
+.start-button:active {
+    background-color: #eeb3ac;
+    transform: scale(0.95) translateY(2px);
+    box-shadow: 0 2px #004260;
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.time, .date {
+    color: #004C6F;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* Start Button Contents Styling */
+.button-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.625rem;
+    cursor: pointer;
+    font-size: large;
+    background-color: #E99B92;
+}
+
+.button-sleep, .button-shutDown, .button-restart {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.button-sleep:hover, .button-shutDown:hover, .button-restart:hover {
+    transform: scale(1.1);
+}
+
+.sleep-icon, .power-icon, .refresh-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s,;
+}

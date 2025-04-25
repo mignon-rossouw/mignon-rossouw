@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mignon Rossouw Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@400;800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styling/styles.css" />
+  </head>
+    <body>
+      <!-- Icon Container -->
+      <div class="desktop">
+        
+        <!-- Browser Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-browser.svg" alt="Browser Image" class="browser-icon">
+          <p class="icon-label"> Meowser </p>
+        </div>
+        
+        <!-- Notes Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-notes.svg" alt="Notes Image" class="notes-icon">
+          <p class="icon-label"> Notes </p>
+        </div>
+        
+        <!-- Folder Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-folder.svg" alt="Folder Image" class="folder-icon">
+          <p class="icon-label"> Random Files </p>
+        </div>
+        
+        <!-- CV Container -->
+        <div class="icon-container pop">
+          <a href="https://drive.google.com/file/d/1fJai8jxYjVzyHT0AF5SiangsIrz0Ipkw/view?usp=sharing" download="" class="cv-download" target="_blank">
+            <img src="./assets/icon-cv.svg" alt="CV Image" class="cv-icon">
+            <p class="icon-label"> Academic <br> Record </p>
+          </a>
+        </div>
+        
+        <!-- Information Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-information.svg" alt="Scroll Image" class="information-icon">
+          <p class="icon-label"> Information </p>
+        </div>
+  
+        <!-- Terminal Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-terminal.svg" alt="Batch Image" class="terminal-icon">
+          <p class="icon-label"> Terminal </p>
+        </div>
+        
+        <!-- Games Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-games.svg" alt="Games Image" class="games-icon">
+          <p class="icon-label"> Pounce </p>
+        </div>
+        
+        <!-- Precious Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-precious.svg" alt="Precious Image" class="precious-icon">
+          <p class="icon-label"> precious.png </p>
+        </div>
+  
+        <!-- Recycle Bin Container -->
+        <div class="icon-container pop">
+          <img src="./assets/icon-recycle.svg" alt="Recycling Bin Image" class="recyclebin-icon">
+          <p class="icon-label"> Recycle <br>  Bin </p>
+        </div>
+      </div>
+      
+        <!-- Modals -->
+
+        <!-- Browser Modal -->
+        <div class="modal hidden" id="browser-modal">
+          <div class="modal-header">
+            <h3> Meowser </h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content">
+            <p>
+              <!-- Google Custom Search Engine -->
+          <script async src="https://cse.google.com/cse.js?cx=90c028202ba074e6a">
+          </script>
+          <div class="gcse-search"></div>
+        </p>
+          </div>
+        </div>
+  
+
+        <!-- Notes Modal -->
+        <div class="modal hidden" id="notes-modal">
+          <div class="modal-header">
+            <h3> Notes </h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content">
+            <!-- Notes List -->
+            <div class="note-list">
+              <div class="note1" id="note-1"> Note 1 </div>
+              <div class="note2" id="note-2"> Note 2 </div>
+              <div class="note3" id="note-3"> Note 3 </div>
+            </div>
+        
+            <!-- Individual Note View -->
+            <div class="note-detail hidden">
+              <div class="back-button">
+                <button id="back-to-list"> &larr; </button>
+              </div>
+              <div class="note-detail-content">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  
+        <!-- Folder Modal -->
+        <div class="modal hidden" id="folder-modal">
+          <div class="modal-header">
+            <h3> Notes </h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content">
+            <!-- Folder List -->
+            <div class="folder-list">
+              <div class="doc1" id="doc-1"> Folder 1 </div>
+              <div class="doc2" id="doc-2"> Folder 2 </div>
+              <div class="doc3" id="doc-3"> Folder 3 </div>
+            </div>
+        
+            <!-- Individual Foldeer View -->
+            <div class="folder-detail hidden">
+              <div class="back-button">
+                <button id="back-to-folder"> &larr; </button>
+              </div>
+              <div class="folder-detail-content">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <!-- Information Modal -->
+        <div class="modal hidden" id="information-modal">
+          <div class="modal-header">
+            <h3> Information </h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content">
+            <!-- Information List -->
+            <div class="information-list">
+              <div class="info1" id="info-1"> Document 1 </div>
+              <div class="info2" id="info-2"> Document 2 </div>
+              <div class="info3" id="info-3"> Document 3 </div>
+            </div>
+        
+            <!-- Individual Information View -->
+            <div class="information-detail hidden">
+              <div class="back-button">
+                <button id="back-to-information"> &larr; </button>
+              </div>
+              <div class="information-detail-content">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Terminal Modal -->
+        <div class="modal hidden" id="terminal-modal">
+          <div class="modal-header">
+            <h3>Terminal</h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content" id = "terminal-content">
+            <div id="terminal-output" class="terminal-output">
+              <p style="margin-bottom: 10px; font-size: x-large;">Welcome to my Terminal!</p>
+              <p>Type 'help' for more commands.</p>
+              <br>
+            </div>
+            <br>
+            <div class="terminal-input-container">
+              <span class="terminal-prompt">&gt;</span>
+              <input id="terminal-input" class="terminal-input" type="text" autofocus contenteditable="true" placeholder=" . . . "/>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Games Modal -->
+        <div class="modal hidden" id="games-modal">
+          <div class="modal-header">
+            <h3> Pounce </h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content">
+            <p><p> Coming soon . . . </p>
+            <pre>
+               /\_/\
+          = (   • . •   ) =
+             /           \     
+            </pre></p>
+          </div>
+        </div>
+        
+        <!-- Precious Modal -->
+        <div class="modal hidden" id="precious-modal">
+          <div class="modal-header">
+            <h3> precious.png </h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content">
+            <!-- Precious Image-->
+          </div>
+        </div>
+        
+        <!-- Recycle Bin Modal -->
+        <div class="modal hidden" id="recycle-modal">
+          <div class="modal-header">
+            <h3> Recycle Bin </h3>
+            <button class="close-button">X</button>
+          </div>
+          <div class="modal-content">
+            <!-- Recycle Bin List -->
+            <div class="recycle-list">
+              <div class="rec1" id="rec-1"> Document 1 </div>
+              <div class="rec2" id="rec-2"> Document 2 </div>
+              <div class="rec3" id="rec-3"> Document 3 </div>
+            </div>
+        
+            <!-- Individual Recycle Bin View -->
+            <div class="recycle-detail hidden">
+              <div class="back-button">
+                <button id="back-to-recycle"> &larr; </button>
+              </div>
+              <div class="recycle-detail-content">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="overlay hidden"></div>
+      </div>
+  
+      <!-- Taskbar -->
+      <footer class = "taskbar"> 
+          <div class = "taskbar-button"></div>
+          <div class="notification hidden">
+            <img class="notification-icon" src="" alt="Notification Icon">
+          </div>
+  
+        <!-- Time and Date -->
+        <div class = "time-container">
+          <div class="time"></div>
+          <div class="date"></div>
+        </div>
+      </footer>
+      
+      <!-- Taskbar Modal -->
+      <div class="taskbar-modal hidden" id = "taskbarMenu">
+          <button class="close-button" id = "startMenu-button">&times;</button>
+          <ul class = "startMenu-items">
+            <li> sleep </li>
+            <li> shut down</li>
+            <li> restart </li>
+          </ul>
+      </div>
+      
+      <div class="overlay hidden"></div>
+      
+      <script src="scripts/script.js"></script>
+  </body>
+</html>

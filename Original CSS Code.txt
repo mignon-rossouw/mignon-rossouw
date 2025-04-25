@@ -1,0 +1,1676 @@
+/* Laptops or Desktops */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .icon-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    /* ----------------------------------------------- */
+    /* BROWSER CONTAINER (1025px - 1280px) - Laptops or Desktops */
+    /* ----------------------------------------------- */
+    .browser-container {
+        grid-area: 1 / 1 / 2 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .browser-container:hover {
+        transform: scale(1.1);
+    }
+
+    .browser-container:active {
+        transform: scale(0.95);
+    }
+
+    .browser-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* NOTES CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */
+    .notes-container {
+        grid-area: 2 / 1 / 3 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .notes-container:hover {
+        transform: scale(1.1);
+    }
+
+    .notes-container:active {
+        transform: scale(0.95);
+    }
+
+    .notes-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* FOLDER CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */    
+    .folder-container {
+        grid-area: 3 / 1 / 4 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .folder-container:hover {
+        transform: scale(1.1);
+    }
+
+    .folder-container:active {
+        transform: scale(0.95);
+    }
+
+    .folder-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* CV CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */
+    .cv-container {
+        grid-area: 4 / 1 / 5 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .cv-container:hover {
+        transform: scale(1.1);
+    }
+
+    .cv-container:active {
+        transform: scale(0.95);
+    }
+
+    .cv-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* INFORMATION CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */    
+    .information-container {
+        grid-area: 5 / 1 / 6 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .information-container:hover {
+        transform: scale(1.1);
+    }
+
+    .information-container:active {
+        transform: scale(0.95);
+    }
+
+    .information-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* TERMINAL CONTAINER CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */    
+    .terminal-container {
+        grid-area: 6 / 1 / 7 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .terminal-container:hover {
+        transform: scale(1.1);
+    }
+
+    .terminal-container:active {
+    transform: scale(0.95);
+    }
+
+    .terminal-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* GAMES CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */    
+    .games-container {
+        grid-area: 7 / 1 / 8 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .games-container:hover {
+        transform: scale(1.1);
+    }
+
+    .games-container:active {
+        transform: scale(0.95);
+    }
+
+    .games-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* PRECIOUS CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */
+
+    .precious-container {
+        grid-area: 1 / 2 / 2 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .precious-container:hover {
+        transform: scale(1.1);
+    }
+
+    .precious-container:active {
+        transform: scale(0.95);
+    }
+
+    .precious-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* RECYCLE BIN CONTAINER (1025px - 1280px) - Laptops or Desktops  */
+    /* ----------------------------------------------- */
+    .recyclebin-container {
+        grid-area: 7 / 6 / 8 / 7;
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    .recyclebin-container:hover {
+        transform: scale(1.1);
+    }
+
+    .recyclebin-container:active {
+        transform: scale(0.95);
+    }
+
+    .recyclebin-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ############################################### */
+/* ############################################### */
+
+/* Tablets, iPads (Potrait) */ 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .icon-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    /* ----------------------------------------------- */
+    /* BROWSER CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .browser-container {
+        grid-area: 1 / 1 / 2 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .browser-container:hover {
+        transform: scale(1.1);
+    }
+
+    .browser-container:active {
+        transform: scale(0.95);
+    }
+
+    .browser-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* NOTES CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */   
+    .notes-container {
+        grid-area: 2 / 1 / 3 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .notes-container:hover {
+        transform: scale(1.1);
+    }
+
+    .notes-container:active {
+        transform: scale(0.95);
+    }
+
+    .notes-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* FOLDER CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */   
+    .folder-container {
+        grid-area: 3 / 1 / 4 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .folder-container:hover {
+        transform: scale(1.1);
+    }
+
+    .folder-container:active {
+        transform: scale(0.95);
+    }
+
+    .folder-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* CV CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .cv-container {
+        grid-area: 4 / 1 / 5 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .cv-container:hover {
+        transform: scale(1.1);
+    }
+
+    .cv-container:active {
+        transform: scale(0.95);
+    }
+
+    .cv-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* INFORMATION CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */    
+    .information-container {
+        grid-area: 5 / 1 / 6 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .information-container:hover {
+        transform: scale(1.1);
+    }
+
+    .information-container:active {
+        transform: scale(0.95);
+    }
+
+    .information-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* TERMINAL CONTAINER CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .terminal-container {
+        grid-area: 6 / 1 / 7 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .terminal-container:hover {
+        transform: scale(1.1);
+    }
+
+    .terminal-container:active {
+        transform: scale(0.95);
+    }
+
+    .terminal-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* GAMES CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */    
+    .games-container:hover {
+        transform: scale(1.1);
+    }
+
+    .games-container:active {
+        transform: scale(0.95);
+    }
+
+    .games-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .games-container {
+        grid-area: 1 / 2 / 2 / 3; 
+    }
+
+    /* ----------------------------------------------- */
+    /* PRECIOUS CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .precious-container {
+        grid-area: 2 / 2 / 3 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .precious-container:hover {
+        transform: scale(1.1);
+    }
+
+    .precious-container:active {
+        transform: scale(0.95);
+    }
+
+    .precious-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* RECYCLE BIN CONTAINER (768px - 1024px [POTRAIT]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .recyclebin-container {
+        grid-area: 6 / 6 / 7 / 7;
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    .recyclebin-container:hover {
+        transform: scale(1.1);
+    }
+
+    .recyclebin-container:active {
+        transform: scale(0.95);
+    }
+
+    .recyclebin-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ############################################### */
+/* ############################################### */
+
+/* Tablets, Ipads (Landscape) */ 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .icon-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    /* ----------------------------------------------- */
+    /* BROWSER CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads  */
+    /* ----------------------------------------------- */
+    .browser-container {
+        grid-area: 1 / 1 / 2 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .browser-container:hover {
+        transform: scale(1.1);
+    }
+
+    .browser-container:active {
+        transform: scale(0.95);
+    }
+
+    .browser-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* NOTES CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .notes-container {
+        grid-area: 2 / 1 / 3 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .notes-container:hover {
+        transform: scale(1.1);
+    }
+
+    .notes-container:active {
+        transform: scale(0.95);
+    }
+
+    .notes-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* FOLDER CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .folder-container {
+        grid-area: 3 / 1 / 4 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .folder-container:hover {
+        transform: scale(1.1);
+    }
+
+    .folder-container:active {
+        transform: scale(0.95);
+    }
+
+    .folder-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* CV CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .cv-container {
+        grid-area: 4 / 1 / 5 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .cv-container:hover {
+        transform: scale(1.1);
+    }
+
+    .cv-container:active {
+        transform: scale(0.95);
+    }
+
+    .cv-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* INFORMATION CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */   
+    .information-container {
+        grid-area: 5 / 1 / 6 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .information-container:hover {
+        transform: scale(1.1);
+    }
+
+    .information-container:active {
+        transform: scale(0.95);
+    }
+
+    .information-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* TERMINAL CONTAINER CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .terminal-container {
+        grid-area: 6 / 1 / 7 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .terminal-container:hover {
+        transform: scale(1.1);
+    }
+
+    .terminal-container:active {
+        transform: scale(0.95);
+    }
+
+    .terminal-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* GAMES CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .games-container {
+        grid-area: 1 / 2 / 2 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .games-container:hover {
+        transform: scale(1.1);
+    }
+
+    .games-container:active {
+        transform: scale(0.95);
+    }
+
+    .games-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* PRECIOUS CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .precious-container {
+        grid-area: 2 / 2 / 3 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .precious-container:hover {
+        transform: scale(1.1);
+    }
+
+    .precious-container:active {
+        transform: scale(0.95);
+    }
+
+    .precious-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* RECYCLE BIN CONTAINER (768px - 1024px [LANDSCAPE]) - Tablets, iPads */
+    /* ----------------------------------------------- */
+    .recyclebin-container {
+        grid-area: 6 / 6 / 7 / 7;
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    .recyclebin-container:hover {
+        transform: scale(1.1);
+    }
+
+    .recyclebin-container:active {
+        transform: scale(0.95);
+    }
+
+    .recyclebin-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ############################################### */
+/* ############################################### */
+
+/* Low Resolution Tablets, Mobiles (Landscape) */ 
+@media (min-width: 481px) and (max-width: 767px) {
+    .icon-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    /* ----------------------------------------------- */
+    /* BROWSER CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */    
+    .browser-container {
+        grid-area: 1 / 1 / 2 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .browser-container:hover {
+        transform: scale(1.1);
+    }
+
+    .browser-container:active {
+        transform: scale(0.95);
+    }
+
+    .browser-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* NOTES CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .notes-container {
+        grid-area: 2 / 1 / 3 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .notes-container:hover {
+        transform: scale(1.1);
+    }
+
+    .notes-container:active {
+        transform: scale(0.95);
+    }
+
+    .notes-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* FOLDER CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .folder-container {
+        grid-area: 3 / 1 / 4 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .folder-container:hover {
+        transform: scale(1.1);
+    }
+
+    .folder-container:active {
+        transform: scale(0.95);
+    }
+
+    .folder-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* CV CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .cv-container {
+        grid-area: 4 / 1 / 5 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .cv-container:hover {
+        transform: scale(1.1);
+    }
+
+    .cv-container:active {
+        transform: scale(0.95);
+    }
+
+    .cv-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* INFORMATION CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .information-container {
+        grid-area: 1 / 2 / 2 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .information-container:hover {
+        transform: scale(1.1);
+    }
+
+    .information-container:active {
+        transform: scale(0.95);
+    }
+
+    .information-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* TERMINAL CONTAINER CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .terminal-container {
+        grid-area: 2 / 2 / 3 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .terminal-container:hover {
+        transform: scale(1.1);
+    }
+
+    .terminal-container:active {
+        transform: scale(0.95);
+    }
+
+    .terminal-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* GAMES CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .games-container {
+        grid-area: 3 / 2 / 4 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .games-container:hover {
+        transform: scale(1.1);
+    }
+
+    .games-container:active {
+        transform: scale(0.95);
+    }
+
+    .games-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* PRECIOUS CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .precious-container {
+        grid-area: 4 / 2 / 5 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .precious-container:hover {
+        transform: scale(1.1);
+    }
+
+    .precious-container:active {
+        transform: scale(0.95);
+    }
+
+    .precious-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* RECYCLE BIN CONTAINER (481px - 767px [LANDSCAPE]) - Low Resolution Tablets, Mobiles */
+    /* ----------------------------------------------- */
+    .recyclebin-container {
+        grid-area: 4 / 4 / 5 / 5;
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    .recyclebin-container:hover {
+        transform: scale(1.1);
+    }
+
+    .recyclebin-container:active {
+        transform: scale(0.95);
+    }
+
+    .recyclebin-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ############################################### */
+/* ############################################### */
+
+/* Most Smartphones (Potrait) */ 
+@media (min-width: 320px) and (max-width: 480px) {
+    .icon-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    /* ----------------------------------------------- */
+    /* BROWSER CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .browser-container {
+        grid-area: 1 / 1 / 2 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .browser-container:hover {
+        transform: scale(1.1);
+    }
+
+    .browser-container:active {
+        transform: scale(0.95);
+    }
+
+    .browser-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* NOTES CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .notes-container {
+        grid-area: 2 / 1 / 3 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .notes-container:hover {
+        transform: scale(1.1);
+    }
+
+    .notes-container:active {
+        transform: scale(0.95);
+    }
+
+    .notes-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* FOLDER CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .folder-container {
+        grid-area: 3 / 1 / 4 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .folder-container:hover {
+        transform: scale(1.1);
+    }
+
+    .folder-container:active {
+        transform: scale(0.95);
+    }
+
+    .folder-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* CV CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .cv-container {
+        grid-area: 4 / 1 / 5 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .cv-container:hover {
+        transform: scale(1.1);
+    }
+
+    .cv-container:active {
+        transform: scale(0.95);
+    }
+
+    .cv-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* INFORMATION CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .information-container {
+        grid-area: 1 / 2 / 2 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .information-container:hover {
+        transform: scale(1.1);
+    }
+
+    .information-container:active {
+        transform: scale(0.95);
+    }
+
+    .information-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* TERMINAL CONTAINER CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .terminal-container {
+        grid-area: 2 / 2 / 3 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .terminal-container:hover {
+        transform: scale(1.1);
+    }
+
+    .terminal-container:active {
+        transform: scale(0.95);
+    }
+
+    .terminal-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* GAMES CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .games-container {
+        grid-area: 3 / 2 / 4 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .games-container:hover {
+        transform: scale(1.1);
+    }
+
+    .games-container:active {
+        transform: scale(0.95);
+    }
+
+    .games-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* PRECIOUS CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */    
+    .precious-container {
+        grid-area: 4 / 2 / 5 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .precious-container:hover {
+        transform: scale(1.1);
+    }
+
+    .precious-container:active {
+        transform: scale(0.95);
+    }
+
+    .precious-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    /* ----------------------------------------------- */
+    /* RECYCLE BIN CONTAINER (320px - 480px [POTRAIT]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .recyclebin-container {
+        grid-area: 4 / 3 / 5 / 4;
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    .recyclebin-container:hover {
+        transform: scale(1.1);
+    }
+
+    .recyclebin-container:active {
+        transform: scale(0.95);
+    }
+
+    .recyclebin-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+}
+
+/* ############################################### */
+/* ############################################### */
+
+/* Most Smartphones (Landscape) */ 
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    .icon-container {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    /* ----------------------------------------------- */
+    /* BROWSER CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .browser-container {
+        grid-area: 1 / 1 / 2 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .browser-container:hover {
+        transform: scale(1.1);
+    }
+
+    .browser-container:active {
+        transform: scale(0.95);
+    }
+
+    .browser-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .browser-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+
+    /* ----------------------------------------------- */
+    /* NOTES CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .notes-container {
+        grid-area: 2 / 1 / 3 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .notes-container:hover {
+        transform: scale(1.1);
+    }
+
+    .notes-container:active {
+        transform: scale(0.95);
+    }
+
+    .notes-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .notes-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------------- */
+    /* FOLDER CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .folder-container {
+        grid-area: 3 / 1 / 4 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .folder-container:hover {
+        transform: scale(1.1);
+    }
+
+    .folder-container:active {
+        transform: scale(0.95);
+    }
+
+    .folder-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .folder-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------------- */
+    /* CV CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .cv-container {
+        grid-area: 4 / 1 / 5 / 2; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .cv-container:hover {
+        transform: scale(1.1);
+    }
+
+    .cv-container:active {
+        transform: scale(0.95);
+    }
+
+    .cv-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .cv-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------------- */
+    /* INFORMATION CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .information-container {
+        grid-area: 1 / 2 / 2 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .information-container:hover {
+        transform: scale(1.1);
+    }
+
+    .information-container:active {
+        transform: scale(0.95);
+    }
+
+    .information-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .information-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------------- */
+    /* TERMINAL CONTAINER CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .terminal-container {
+        grid-area: 2 / 2 / 3 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .terminal-container:hover {
+        transform: scale(1.1);
+    }
+
+    .terminal-container:active {
+        transform: scale(0.95);
+    }
+
+    .terminal-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .terminal-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------------- */
+    /* GAMES CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .games-container {
+        grid-area: 3 / 2 / 4 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .games-container:hover {
+        transform: scale(1.1);
+    }
+
+    .games-container:active {
+        transform: scale(0.95);
+    }
+
+    .games-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .games-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------------- */
+    /* PRECIOUS CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .precious-container {
+        grid-area: 4 / 2 / 5 / 3; 
+        padding-left: 20px;
+        justify-self: first baseline;
+        cursor: pointer;
+    }
+
+    .precious-container:hover {
+        transform: scale(1.1);
+    }
+
+    .precious-container:active {
+        transform: scale(0.95);
+    }
+
+    .precious-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .precious-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------------- */
+    /* RECYCLE BIN CONTAINER (480px - 320px [LANDSCAPE]) - Most Smartphones */
+    /* ----------------------------------------------- */
+    .recyclebin-container {
+        grid-area: 4 / 5 / 5 / 6;
+        justify-self: end;
+        cursor: pointer;
+    }
+
+    .recyclebin-container:hover {
+        transform: scale(1.1);
+    }
+
+    .recyclebin-container:active {
+        transform: scale(0.95);
+    }
+
+    .recyclebin-text {
+        width: 65px;
+        height: 22px;
+        text-align: center;
+        color: black;
+        font-size: 12px;
+        font-family: Sniglet;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+
+    .recyclebin-icon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+/* ############################################### */
+/* ############################################### */
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++ */
+/* -------------------- HTML --------------------- */

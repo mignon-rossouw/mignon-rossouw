@@ -1,0 +1,373 @@
+.modal#notes-modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90vw;
+        max-height: 90vh;
+        width: 90vw;
+        height: 70vh;
+        overflow: hidden;
+        background: #FFF7F8;
+        border-radius: 10px;
+        border: 4px solid #5C2231;
+        z-index: 1000;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .notes-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #D48B9F;
+        color: #5C2231;
+        width: 100%;
+        height: 10%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    #notes-x {
+        background-image: url("/assets/close-btn.svg");
+        background-position: 50% 50%;
+        width: 7vw;
+        height: 7vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-right: 1vw;
+        transition: transform 0.3s ease, background-image 0.5s ease;
+    }
+
+    #notes-x:hover {
+        background-image: url("/assets/close-btn-hover.svg");
+        background-position: 50% 50%;
+        width: 7vw;
+        height: 7vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-right: 1vw;
+    }
+
+    #notes-x:active {
+        background-image: url("/assets/close-btn-active.svg");
+        background-position: 50% 50%;
+        width: 7vw;
+        height: 7vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-right: 1vw;
+    }
+
+    .notes-hidden-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+    #notes-h3 {
+        font-size: 1.5rem;
+        margin-left: 1vw;
+    }
+
+    #notes-list {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #F6E6EA;
+        border: 2px solid #E4B5C1;
+    }
+    
+    .note-item {
+        background: #fefefe;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+    }
+
+    .note-item:hover {
+        background-color: #fdf1f3;
+      }
+
+    .note-timestamp {
+        font-size: 0.9rem;
+        color: #888;
+        text-align: right;
+        margin-left: auto;
+        white-space: nowrap;
+    }
+
+    .note-title {
+        font-weight: bold;
+        cursor: pointer;
+        color: #333;
+        flex-grow: 1;
+    }
+
+    .delete-note-btn {
+        font-size: 2vw;
+        color: #D48B9F;
+        background-color: #EAC5CF;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+      }
+
+      .delete-note-btn:hover {
+        background-color: #F3CAD4;
+        color: #CE7990;
+      }
+
+      .delete-note-btn:active {
+        transform: scale(0.9);
+        box-shadow: 2px 2px 2px 2px inset rgba(0, 0, 0, 0.3);
+      }
+    
+    #create-note-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 4vw;
+        color: #D48B9F;
+        background-color: #EAC5CF;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+    }
+
+    #create-note-btn:hover {
+        background-color: #F3CAD4;
+        color: #CE7990;
+    }
+
+    #create-note-btn:active {
+        transform: scale(0.9);
+        box-shadow: 2px 2px 2px 2px inset rgba(0, 0, 0, 0.3);
+    }
+
+    #save-note {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 4vw;
+        color: #D48B9F;
+        background-color: #EAC5CF;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+    }
+
+    #save-note:hover {
+        background-color: #F3CAD4;
+        color: #CE7990;
+    }
+
+    #save-note:active {
+        transform: scale(0.9);
+        box-shadow: 2px 2px 2px 2px inset rgba(0, 0, 0, 0.3);
+    }
+
+    #back-to-notes {
+        position: fixed;
+        top: 100px;
+        left: 20px;
+        font-size: 2vw;
+        color: #D48B9F;
+        background-color: #EAC5CF;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+    }
+
+    #back-to-notes:hover {
+        background-color: #F3CAD4;
+        color: #CE7990;
+    }
+
+    #back-to-notes:active {
+        transform: scale(0.9);
+        box-shadow: 2px 2px 2px 2px inset rgba(0, 0, 0, 0.3);
+    }
+
+    #note-title {
+        position: relative;
+        font-size: 1rem;
+        width: calc(100% - 40px);
+        height: auto;
+        margin: 10px auto 0;
+        padding: 12px 16px;
+        border: 2px solid #E4B5C1;
+        border-radius: 12px;
+        background-color: #F3DEE4;
+        color: #5C2231;
+        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+        outline: none;
+        resize: none;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        box-sizing: border-box;
+      }
+
+    #note-title:focus {
+        border-color: #D48B9F;
+        box-shadow: 0 0 8px #E4B5C1;
+      }
+
+    #note-content {
+        position: relative;
+        font-size: 1rem;
+        width: calc(100% - 40px);
+        height: calc(100% - 150px);
+        height: 180px;
+        margin: 10px auto 80px;
+        padding: 12px 16px;
+        border: 2px solid #E4B5C1;
+        border-radius: 12px;
+        background-color: #F3DEE4;
+        color: #5C2231;
+        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+        outline: none;
+        resize: none;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    #note-content:focus {
+        border-color: #D48B9F;
+        box-shadow: 0 0 8px #E4B5C1;
+      }
+
+
+// Load notes from local storage or initialize an empty array
+let notes = JSON.parse(localStorage.getItem('notes')) || [];
+
+// Function to display notes
+function displayNotes() {
+  // Clear the notes list
+  notesList.innerHTML = '';
+
+  // Loop through each note and create HTML elements to display it
+  notes.forEach((note, index) => {
+    const noteItem = document.createElement('div');
+    noteItem.classList.add('note-item');
+
+    const noteHeader = document.createElement('div');
+    noteHeader.classList.add('note-header');
+
+    const noteTitle = document.createElement('div');
+    noteTitle.classList.add('note-title');
+    noteTitle.textContent = note.title;
+    noteTitle.addEventListener('click', () => viewNoteContent(index));
+
+    const noteTimestamp = document.createElement('div');
+    noteTimestamp.classList.add('note-timestamp');
+    noteTimestamp.textContent = note.date;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = '-';
+    deleteBtn.classList.add('delete-note-btn');
+    deleteBtn.addEventListener('click', () => deleteNote(index));
+
+    noteHeader.appendChild(noteTitle);
+    noteHeader.appendChild(noteTimestamp);
+    noteItem.appendChild(noteHeader);
+    noteItem.appendChild(deleteBtn);
+    notesList.appendChild(noteItem);
+  });
+}
+
+// Function to save a new note
+function saveNote() {
+  const title = noteTitle.value.trim();
+  const content = noteContent.value.trim();
+  if (title && content) {
+    const date = new Date().toLocaleString();
+    notes.push({ title, content, date });
+    localStorage.setItem('notes', JSON.stringify(notes));
+    displayNotes();
+    noteTitle.value = '';
+    noteContent.value = '';
+    noteTitle.classList.add('hidden');
+    noteContent.classList.add('hidden');
+    saveNoteBtn.classList.add('hidden');
+    backToNotesBtn.classList.add('hidden');
+    createNoteBtn.classList.remove('hidden');
+    notesList.classList.remove('hidden');
+  }
+}
+
+// Function to delete a note
+function deleteNote(index) {
+  notes.splice(index, 1);
+  localStorage.setItem('notes', JSON.stringify(notes));
+  displayNotes();
+}
+
+// Function to show the create note fields
+function showCreateNoteFields() {
+  noteTitle.classList.remove('hidden');
+  noteContent.classList.remove('hidden');
+  saveNoteBtn.classList.remove('hidden');
+  backToNotesBtn.classList.remove('hidden');
+  createNoteBtn.classList.add('hidden');
+  notesList.classList.add('hidden');
+}
+
+// Function to go back to the notes list
+function backToNotes() {
+  noteTitle.classList.add('hidden');
+  noteContent.classList.add('hidden');
+  saveNoteBtn.classList.add('hidden');
+  backToNotesBtn.classList.add('hidden');
+  createNoteBtn.classList.remove('hidden');
+  notesList.classList.remove('hidden');
+}
+
+// Function to view and edit note content
+function viewNoteContent(index) {
+  const note = notes[index];
+  noteTitle.value = note.title;
+  noteContent.value = note.content;
+  const selectedNote = document.querySelectorAll('.note-item');
+  selectedNote.forEach((item) => item.classList.remove('note-item-active'));
+  selectedNote[index].classList.add('note-item-active');
+  showCreateNoteFields();
+}
+
+// Event listener for the create note button
+createNoteBtn.addEventListener('click', showCreateNoteFields);
+
+// Event listener for the save note button
+saveNoteBtn.addEventListener('click', saveNote);
+
+// Event listener for the back to notes button
+backToNotesBtn.addEventListener('click', backToNotes);
+
+// Display notes when the page loads
+document.addEventListener('DOMContentLoaded', displayNotes);
